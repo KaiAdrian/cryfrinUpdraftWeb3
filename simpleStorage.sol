@@ -2,14 +2,28 @@
 pragma solidity ^0.8.18; //solidity version
 
 contract simplStorage {
-    uint256  favNumber;// 0 by defu..
 
-    uint256[]seznamFavNumber;
+    uint256  myFavNumber;// 0 by defu..
+
+  //  uint256[]seznamFavNumber;
+  struct Person{
+    uint256 favNumber;
+    string ime;
+  }
+
+    Person[] public  seznamPerson;
+
+    // Person public Jozi =Person({favNumber: 34, ime: unicode"Joži"}); //unicode zarad šumnikov
 
     function store(uint256 _favNumber)public{
-        favNumber =_favNumber;
+       myFavNumber =_favNumber;
     }
     function retrive() public view returns(uint256)  {
-        return favNumber;
+        return myFavNumber;
+    }
+    function addPerson(string memory _name, uint256 _favNumber) public {
+       seznamPerson.push(Person(_favNumber,_name));
     }
 }
+
+
