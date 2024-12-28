@@ -12,6 +12,7 @@ contract simplStorage {
   }
 
     Person[] public  seznamPerson;
+    mapping (string=>uint256)public imeTofavNumber ;
 
     // Person public Jozi =Person({favNumber: 34, ime: unicode"Joži"}); //unicode zarad šumnikov
 
@@ -23,6 +24,7 @@ contract simplStorage {
     }
     function addPerson(string memory _name, uint256 _favNumber) public {
        seznamPerson.push(Person(_favNumber,_name));
+       imeTofavNumber[_name] =_favNumber;
     }
 }
 

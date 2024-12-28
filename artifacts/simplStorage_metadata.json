@@ -24,6 +24,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "imeTofavNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "retrive",
 				"outputs": [
@@ -102,11 +121,11 @@
 	},
 	"sources": {
 		"simpleStorage.sol": {
-			"keccak256": "0x23132f117ec2205edae646128f8e16033cd84a0cc8d9ab6f712f10bc4b71cff0",
+			"keccak256": "0x45dd5f887f3772019825e2725531af441091fbf9c9f576653c03a553bc708a0b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a30b59a9fae8ef2d46ba1f061900d7dbf0688edb3fc1d174311bc0c0e06692ea",
-				"dweb:/ipfs/QmVCscShY73otyQAswnvXvd6PiBudKxx6fbr9AtyYcg8rd"
+				"bzz-raw://b99d247518feeb399504a80b75ed3ffbc1491a54ad84f7516872a95c25c21961",
+				"dweb:/ipfs/QmexDWqxBz5UMGTwTNmdmnQLmCddwDJKS3yzk11K7RBZ1i"
 			]
 		}
 	},
