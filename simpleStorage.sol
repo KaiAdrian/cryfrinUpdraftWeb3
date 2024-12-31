@@ -22,7 +22,7 @@ contract simplStorage {
     function retrive() public view returns(uint256)  {
         return myFavNumber;
     }
-    function addPerson(string memory _name, uint256 _favNumber) public {
+    function addPerson(string memory _name,uint256 _favNumber) public {
        seznamPerson.push(Person(_favNumber,_name));
        imeTofavNumber[_name] =_favNumber;
     }
