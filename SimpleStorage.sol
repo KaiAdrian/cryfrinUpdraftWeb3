@@ -16,7 +16,7 @@ contract SimpleStorage {
 
     // Person public Jozi =Person({favNumber: 34, ime: unicode"Joži"}); //unicode zarad šumnikov
 
-    function store(uint256 _favNumber)public{
+    function store(uint256 _favNumber)public virtual {
        myFavNumber =_favNumber;
     }
     function retrive() public view returns(uint256)  {
