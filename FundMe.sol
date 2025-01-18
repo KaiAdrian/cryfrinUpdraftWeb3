@@ -1,5 +1,18 @@
-//get funds 
-//widr...
+// get funds 
+// widr...
 // set min amount req
 
-//SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract FundMe {
+
+    function fund() public  {
+        
+    }
+    function withdraw() public  {
+        
+    }
+
+
+}
