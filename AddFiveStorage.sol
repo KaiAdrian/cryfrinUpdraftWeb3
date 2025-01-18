@@ -8,3 +8,4 @@ contract AddFiveStorage is SimpleStorage{
         myFavNumber = _addedNum + 10;
     }
 }
+//
