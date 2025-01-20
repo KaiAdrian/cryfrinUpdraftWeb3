@@ -10,7 +10,7 @@ contract FundMe {
 
     function fund() public payable  {
         minUsd = minUsd + 1;
-        require(msg.value >= 1e18,"Amount sent is to low!"); //1 ETH
+        require(msg.value >= minUsd,"Amount sent is to low!"); //1 ETH
     }
     function withdraw() public  {
         
